@@ -1,0 +1,93 @@
+.btn {
+    outline: none;
+    border-width: 0;
+    &:focus,
+    &:focus-within {
+        outline: none;
+    }
+    &-large {
+        padding: 1.5rem 10rem;
+    }
+    &-small {
+        padding: 0.9rem 3rem;
+    }
+    &-secondary {
+        color: $primary-color;
+        background: #061327;
+        &:hover {
+            background-color: $primary-color;
+            color: $dark-color;
+        }
+    }
+    &-primary {
+        background: $primary-color;
+        color: #fff;
+        &:hover {
+            background-color: $primary-color;
+            color: $dark-color;
+        }
+    }
+    &-curved {
+        border-radius: 50px;
+    }
+}
+
+.dark {
+    background-color: $dark-color;
+    color: $primary-color;
+}
+.logo {
+    width: 150px;
+}
+.text-bold {
+    font-weight: bold;
+}
+
+@mixin flexBody {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $primary-color;
+    max-width: 500px;
+}
+.para-text {
+    font-size: 1rem;
+    color: $dark-color;
+    max-width: 400px;
+    padding: 2rem 0;
+}
+@mixin big-card {
+    padding: 5rem;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background: $secondary-color;
+}
+.text-white {
+    color: #fff;
+}
+$initial_num: (1, 2, 3, 4, 5, 6);
+@each $num in $initial_num {
+    .order-#{$num} {
+        order: #{$num};
+    }
+}
+@each $num in $initial_num {
+    .border-#{$num} {
+        border-width: #{$num}px !important;
+        border-color: $primary-color !important;
+    }
+}
+@each $num in $initial_num {
+    .mb-#{$num} {
+        margin-bottom: #{$num}rem;
+    }
+    .mt-#{$num} {
+        margin-top: #{$num}rem;
+    }
+}

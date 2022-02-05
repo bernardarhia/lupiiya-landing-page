@@ -1,0 +1,18 @@
+.intro-banner {
+    background: url("../../img/bg-1.png");
+    background-size: cover;
+    // background-position: center;
+    background-repeat: no-repeat;
+    padding: 5rem;
+    @include flexBody;
+    &__text {
+        .app-logos {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+.card {
+    @include big-card;
+}

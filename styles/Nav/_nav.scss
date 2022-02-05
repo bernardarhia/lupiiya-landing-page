@@ -1,0 +1,22 @@
+.nav-element {
+    min-height: 80px;
+    padding: 0 5rem;
+    background: $secondary-color;
+    border-bottom: 2px solid $primary-color;
+    @include flexBody;
+    &__links {
+        width: 50%;
+        .nav-links {
+            @include flexBody;
+            li {
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                    padding: 0.2rem;
+                }
+                a {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
