@@ -182,7 +182,7 @@ a {
 }
 
 li.li {
-  list-style-image: url("../../img/vector.png");
+  list-style-image: url("../img/vector.png");
 }
 
 .nav-element {
@@ -268,7 +268,7 @@ header {
 }
 
 .section {
-  background-image: url("../../img/bg-1.png");
+  background-image: url("../img/bg-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -276,7 +276,7 @@ header {
 }
 
 .center-section {
-  background: url("../../img/bg-2.png"), #243754;
+  background: url("../img/bg-2.png"), #243754;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -308,7 +308,7 @@ header {
 }
 
 .fourth-section {
-  background-image: url("../../img/bg-4.png");
+  background-image: url("../img/bg-4.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
